@@ -43,11 +43,11 @@ function circle_intersection(link1, link2)
 		p2x = x1 + a*(x2-x1)/dist
 		p2y = y1 + a*(y2-y1)/dist
 
-		p3x1 = p2x + h(y2-y1)/dist
-		p3x2 = p2x - h(y2-y1)/dist
+		p3x1 = p2x + h*(y2-y1)/dist
+		p3x2 = p2x - h*(y2-y1)/dist
 
-		p3y1 = p2y + h(x2-x1)/dist
-		p3y2 = p2y - h(x2-x1)/dist
+		p3y1 = p2y + h*(x2-x1)/dist
+		p3y2 = p2y - h*(x2-x1)/dist
 
 		return ((p3x1, p3x2), (p3y1, p3y2))
 	end
